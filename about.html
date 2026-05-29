@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>마포 셔츠룸 | 강남 셔츠룸의 허상을 벗겨낸 본질</title>
+    <meta name="description" content="강남 셔츠룸이라는 거대 담론 뒤에 숨겨진 마포의 진짜 고급 유흥. 서버 웜업의 정석, 그 치열한 경쟁과 압도적인 서비스의 디테일을 확인하세요.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 고급 유흥, 럭셔리 라운지, 서버 웜업, 에디토리얼 리뷰, 마포 유흥가">
+    <link rel="canonical" href="https://sf-t3-1779642675702-042.pages.dev">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sf-t3-1779642675702-042.pages.dev">
+    <meta property="og:title" content="마포 셔츠룸: 강남의 그늘, 마포의 빛">
+    <meta property="og:description" content="단순한 유흥이 아닌, 압도적인 서비스와 디테일로 무장한 공간의 재발견.">
+    <meta property="og:image" content="https://sf-t3-1779642675702-042.pages.dev/assets/cover-noir.jpg">
+    
+    <style>
+        /* 
+         * DESIGN SYSTEM: Editorial Luxury (Noir-Gold) 
+         * DNA: Serif, High Contrast, Cinematic, Minimalist 
+         */
+        :root {
+            --bg-color: #050505;
+            --text-primary: #e0e0e0;
+            --text-secondary: #888888;
+            --accent-gold: #c5a059;
+            --accent-gold-dim: #8a703e;
+            --border-color: #1f1f1f;
+            --font-serif: 'Times New Roman', 'Gidugu', serif;
+            --font-sans: 'Pretendard', sans-serif;
+            --spacing-unit: 4rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 2rem;
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Layout & Spacing */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: var(--spacing-unit) 0;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            background: rgba(5, 5, 5, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .tel-link {
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 0.5rem 1.2rem;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .tel-link:hover {
+            background: var(--accent-gold);
+            color: #000;
+        }
+
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+            .tel-link {
+                display: none;
+            }
+        }
+
+        /* Components */
+        .editorial-hero {
+            padding-top: calc(var(--spacing-unit) * 2);
+            padding-bottom: var(--spacing-unit);
+            text-align: left;
+        }
+
+        .meta-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+            border: 1px solid var(--accent-gold-dim);
+            padding: 0.3rem 0.8rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .image-block {
+            width: 100%;
+            height: 400px;
+            background-color: #111;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) contrast(120%);
+            transition: filter 0.5s ease;
+        }
+
+        .image-block:hover img {
+            filter: grayscale(0%) contrast(100%);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold-dim);
+        }
+
+        .info-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .faq-section {
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent-gold-dim);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 0.8rem;
+            color: #444;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">AEGIS WARMER</a>
+            <nav class="nav-links">
+                <a href="#">Editorial</a>
+                <a href="#">Locations</a>
+                <a href="#">Philosophy</a>
+                <a href="#">Contact</a>
+            </nav>
+            <a href="tel:010-1234-5678" class="tel-link">RESERVATION</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="editorial-hero">
+            <div class="container">
+                <span class="meta-tag">Mapo District / Server Warm-up</span>
+                <h1>강남 셔츠룸의<br>허상을 벗겨낸 본질</h1>
+                <p style="max-width: 600px; font-size: 1.2rem; color: #fff;">
+                    이름만 믿고 찾는 강남의 유흥은 이제 과거의 유물입니다. 
+                    마포에서 제안하는 새로운 럭셔리의 기준은 '보여주기'가 아닌 '체감'에 있습니다.
+                   _server warm-up_ 의 정석을 확인하세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section>
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Left Column: Narrative -->
+                    <div class="narrative-col">
+                        <div class="image-block">
+                            <!-- Placeholder for cinematic interior shot -->
+                            <img src="https://sf-t3-1779642675702-042.pages.dev/assets/mapo-lounge-interior.jpg" alt="마포 고급 라운지 내부 전경" onerror="this.style.display='none'; this.parentElement.style.background='#1a1a1a'">
+                        </div>
+                        
+                        <h2>01. 공간의 재정의</h2>
+                        <p>
+                            대부분의 <strong>강남 셔츠룸</strong>이 화려한 조명과 과시적인 인테리어로 손님을 압도하려 한다면, 마포의 최상위권 공간들은 침묵으로 말합니다. 
+                            어두운 톤의 우드와 금속의 차가운 질감, 그리고 그 사이를 채우는 완벽한 사운드 시스템. 
+                            이곳은 단순한 술자리가 아닌, 당신의 감각을 깨우기 위해 설계된 무대입니다.
+                        </p>
+                        <p>
+                            서버 웜업 (Server Warm-up) 이란 단순한 접대가 아닙니다. 
+                            손님의 니즈를 예측하고, 대화가 끊기지 않도록 리듬을 타며, 공간의 온도를 조절하는 고도의 기술입니다. 
+                            마포의 전문가들은 이를 '예술'로 승화시켰습니다.
+                        </p>
+
+                        <div class="image-block" style="height: 300px; margin-top: 2rem;">
+                            <!-- Placeholder for detail shot (glass or decor) -->
+                            <img src="https://sf-t3-1779642675702-042.pages.dev/assets/detail-gold-texture.jpg" alt="디테일한 골드 인테리어" onerror="this.style.display='none'; this.parentElement.style.background='#1a1a1a'">
+                        </div>
+
+                        <h2>02. 압도적인 디테일</h2>
+                        <p>
+                            우리는妥协하지 않습니다. 잔의 온도, 음악의 BPM, 심지어 조명의 각도까지. 
+                            <strong>마포 셔츠룸</strong>이 가진 경쟁력은 이러한 미세한 디테일들의 집약체에서 나옵니다. 
+                            강남의 번잡함을 떠나, 오직 당신과 당신의 시간을 위한 완벽한 프라이버시가 보장되는 공간. 
+                            이것이 우리가 정의하는 진정한 럭셔리입니다.
+                        </p>
+                    </div>
+
+                    <!-- Right Column: Key Info -->
+                    <div class="info-col">
+                        <div class="card-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div class="info-card">
+                                <h3>Location</h3>
+                                <p style="margin-bottom: 0.5rem; color: #fff;">Seoul, Mapo-gu</p>
+                                <p>홍대입구역 도보 5 분<br>합정역 인근 프라이빗 존</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>Operation</h3>
+                                <p style="margin-bottom: 0.5rem; color: #fff;">PM 08:00 - AM 05:00</p>
+                                <p>사전 예약제 운영<br>신분증 지참 필수</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>Dress Code</h3>
+                                <p style="margin-bottom: 0.5rem; color: #fff;">Smart Casual</p>
+                                <p>슬리퍼, 반바지 입장 불가<br>완벽한 예우를 위한 복장</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>자주 묻는 질문</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Q. 강남 셔츠룸과 마포 셔츠룸의 차이점은 무엇인가요?</div>
+                        <div class="faq-answer">
+                            강남이 '화려함과 규모'를 강조한다면, 마포는 '감성과 디테일, 프라이버시'에 집중합니다. 
+                            시끄러운 분위기보다는 깊이 있는 대화와 고급스러운 서비스를 원하신다면 마포를 추천합니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q. 서버 웜업 (Server Warm-up) 이란 정확히 무엇인가요?</div>
+                        <div class="faq-answer">
+                            단순한 술 시중을 넘어, 손님이 공간에 적응하고 즐길 수 있도록 분위기를 주도하고 대화를 이어가는 전문적인 서비스 마인드를 뜻합니다. 
+                            우리의 서버들은 최고의 교육을 받은 전문가들입니다.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Q. 예약 없이 방문해도 되나요?</div>
+                        <div class="faq-answer">
+                            최고의 서비스를 제공하기 위해 완전 예약제로 운영됩니다. 
+                            현장 방문 시 입장이 거절될 수 있으니, 반드시 사전에 연락 주시기 바랍니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer
+</body>
+</html>
